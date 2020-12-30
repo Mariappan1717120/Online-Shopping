@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+ margin:0;
+ background-image: url({{ url_for('static', filename='images/8.jpg') }});
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-size:100% 100%;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+a{
+  display:inline-block;
+  text-decoration:none;
+  text-align:center;
+  font-size:40px;
+  color:darkpink;
+  padding:20px 10px;
+}
+a:hover{
+  color:darkgreen;
+}
+
+</style>
+</head>
+<body>
+<h1 style="font-size:350%;"> ADMIN ACTIVITIES</h1>
+<div>
+<ul>
+  <li><a href="/add">Add Products</a></li>
+  <li><a href="/remove">Remove Product</a></li>
+  <li><a href="/customer">View Orders</a></li>
+</ul>
+</div>
+</body>
+</html>

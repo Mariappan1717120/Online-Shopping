@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+ background-image:  url({{ url_for('static', filename='images/5.jpg') }});
+ background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+input[type=text],input[type=tel],input[type=email],input[type=password]{
+color: black; 
+font-size:20px;
+border-style:solid;
+margin:8px 0;
+border: 2px solid black;
+
+border-radius:4px;
+box-sizing: border-box;
+}
+input:focus{
+background-color:lightblue;
+}
+
+label{
+color: darkblack; 
+font-size: 150%;
+font-style: "Lucida Console";
+width:240px;
+display:inline-block;
+text-align:right;
+}
+input[type=submit]{
+display:inline;
+width:150px;
+background-color:green;
+color:white;
+padding :8px 8px;
+margin:8px 0;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+<body style="text-align:left">
+<h1 style="font-size:300%;color:black;text-align:left;"><i>Registration Form</i></h1>
+<i>
+<form action="/register" method="POST" onsubmit="return validate()">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"></div><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"></div><br>
+<label for="c_password">Confirm Password:</label>
+<input type="password" id="c_password" name="cpassword"></div><br>
+<label for ="fname">First Name:</label>
+<input type="text" id="fname" name="firstName"></div><br>
+<label for ="lname">Last Name:</label>
+<input type="text" id="lname" name="lastName"></div><br>
+<label for ="addr1">Address Line-1:</label>
+<input type="text" style="padding:20px 0px" id="addr1" name="address1"></div><br>
+<label for ="addr2">Address Line-2:</label>
+<input type="text" style="padding:20px 0px" id="addr2" name="address2"></div><br>
+<label for ="zip">Zipcode:</label>
+<input type="text" style="padding:20px 0px" id="zip" name="zipcode"></div><br>
+<label for ="city">City:</label>
+<input type="text" id="city" name="city"></div><br>
+<label for ="state">State:</label>
+<input type="text" id="state" name="state"></div><br>
+<label for ="country">Country:</label>
+<input type="text" id="country" name="country"></div><br>
+<label for="phn_no">Phone No:</label>
+<input type="tel" id="phn_no" name="phone" placeholder="only numbers" pattern="[0-9]{10}" required></div><br>
+<input type="submit"  value="Register">
+</form>
+<div>
+<a href="/loginForm">Login here</a>
+</div>
+</i>
+</body>
+</html>

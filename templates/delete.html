@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Remove Product </title>
+<style>
+body{
+ margin:0;
+ background-image: url({{ url_for('static', filename='images/7.png') }});
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-size:100% 100%;
+}
+</style>
+<head>
+<body>
+<center>
+<br><br><br>
+<h1>  Delete Product <h1>
+<form action ="/removeItem"  method="POST" >
+<label for ="pid">Product Id:</label>
+<input type="text"  name="productId"><br><br>
+<button>Delete</button>
+</form>

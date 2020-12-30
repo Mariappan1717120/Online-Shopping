@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text],input[type=email],input[type=password]{
+color: black; 
+font-size:20px;
+margin:8px 0;
+border: 1px solid black;
+border-radius:4px;
+box-sizing: border-box;
+}
+body{
+ background-image: url({{ url_for('static', filename='images/4.jpg') }});
+ background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+text-align:center;
+}
+
+input:focus{
+background-color:lightblue;
+}
+
+label{
+color: black; 
+font-size: 120%;
+font-style: "italic";
+width:240px;
+display:inline;
+
+}
+input[type=submit]{
+display:inline;
+width:150px;
+background-color:green;
+color:white;
+padding :8px 8px;
+margin:8px 0;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+<h1 style="font-size:40px;color:BLACK;"><i>Customer Login</i></h1><br>
+<body>
+<p> {{error}} </p>
+<b>
+<div>
+<form action="/login" method="POST">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"></div><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"></div><br><BR>
+<input type="submit" value="submit">
+</form>
+<div><br>
+<a href="/registerationForm">Register</a>
+</b>
+</body>
+</html>

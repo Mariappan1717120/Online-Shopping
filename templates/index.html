@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+box-sizing:border-box;
+}
+body{
+ margin:0;
+ background-image: url({{ url_for('static', filename='images/1.jpg') }});
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-size:100% 100%;
+}
+nav{
+background:grey;
+width:100%;
+overflow:auto;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+li{
+float:left;
+}
+nav a{
+  width:200px;
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  background-color:#594848;
+  font-size:25px;
+  color:white;
+  padding:20px 10px;
+}
+nav a:hover{
+background:skyblue;
+color:black;
+}
+ .trail{
+ color:black;
+ font-size: 140%;
+ position:absolute;
+ right:0;
+ display:inline;
+}
+</style>
+</head>
+<body>
+<nav>
+   <ul>
+     <li><a href="customer">CUSTOMER</a></li>
+      <li><a href="admin">ADMIN</a></li>
+</ul>
+</nav><i>
+<label for ="name1" class="trail" style= bottom:140px>KAVYA M     : 1717118 </label>
+<label for ="name2" class="trail" style= bottom:120px>MARIAPPAN J : 1717120 </label>
+<label for ="name3" class="trail" style= bottom:100px>KARTHIKA M  : 1717116  </label>
+<label for ="name4" class="trail" style= bottom:80px>KARTHIKA TS : 1717117  </label>
+<label for ="name5" class="trail" style= bottom:60px>LAKSHMANAN  : 1717119  </label>
+</i></body>
+</html>
